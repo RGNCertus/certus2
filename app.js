@@ -16,6 +16,9 @@ const swaggerOption = {
         },
         servers: [
             {
+                url: 'https://certus2-production-9160.up.railway.app/'
+            },
+            {
                 url: 'http://localhost:4000'
             }
         ]
