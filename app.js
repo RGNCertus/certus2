@@ -30,6 +30,7 @@ const swaggerDocs = swaggerJsdoc(swaggerOption);
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 app.use(express.json());
+app.use(cors());
 
 const MONGO_URI = 'mongodb+srv://kesitoemprendedor777:MongoDBfirstclass@cluster0.vgrkahy.mongodb.net/certus?retryWrites=true&w=majority&appName=Cluster0'
 
